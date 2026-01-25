@@ -1,0 +1,44 @@
+@import './base.css';
+
+.text-center{
+  text-align: center;
+}
+
+.w-25{
+  width: 25%;
+  display: inline-block;
+  box-sizing: border-box;
+}
+.w-50{
+  width: 50%;
+  display: inline-block;
+  box-sizing: border-box;
+}
+.w-75{
+  width: 75%;
+  display: inline-block;
+  box-sizing: border-box;
+}
+.w-100{
+  width: 100%;
+  display: inline-block;
+  box-sizing: border-box;
+}
+
+.m-auto{
+  margin: 0 auto;
+}
+
+.form-group{
+  padding: 10px;
+}
+
+.pannel-item{
+  border: 1px solid black;
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+.pannel-item.active{
+  display: inline-block;
+}

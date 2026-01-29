@@ -2,7 +2,8 @@
 import { reactive, ref } from "vue";
 
 // Déclaration de la variable réactive pour les erreurs
-const error = ref("");
+const errorName = ref('');
+const errorAge = ref('');
 
 // Déclaration des variables réactives pour le formulaire
 const form = reactive({
@@ -14,23 +15,27 @@ const form = reactive({
 function handleSubmit() {
     // Handle form submission logic here
     console.log("Form submitted", form);
-    error.value = "";
+    errorAge.value = "";
+    errorName.value = "";
 
     if (!form.name || !form.email) {
-        error.value = "Name and Email are required!";
+        errorName.value = "Name and Email are required!";
         return;
     }
 
     if (form.age < 18) {
-        error.value = "Too young!";
+        errorAge.value = "Too young!";
         return;
     }
 }
 </script>
 
 <template>
-    <p v-if="error" class="error">
-        {{ error }}
+    <p v-if="errorName" class="error">
+        {{ errorName }}
+    </p>
+    <p v-if="errorAge" class="error">
+        {{ errorAge }}
     </p>
 
     <form  @submit.prevent="handleSubmit">

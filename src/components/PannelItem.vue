@@ -9,6 +9,7 @@ defineProps({
 </script>
 
 <template>
+    <!-- if(isActive) then class="active" -->
     <div class="pannel-item w-100" :class="{ active: isActive }">
         <h2>{{ title }}</h2>
 

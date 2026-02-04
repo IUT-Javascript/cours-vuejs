@@ -4,15 +4,10 @@
 // - ref() : crée une variable réactive (pour valeurs simples)
 import { reactive, ref } from "vue";
 
-<<<<<<< HEAD
-// Variable réactive pour les messages d'erreur
-// Initialisée à vide (pas d'erreur au départ)
-const error = ref('');
-=======
-// Déclaration de la variable réactive pour les erreurs
+// Variables réactive pour les messages d'erreur
+// Initialisées à vide (pas d'erreur au départ)
 const errorName = ref('');
 const errorAge = ref('');
->>>>>>> 012e31e54142cc215f006e77ca28626f431ba33e
 
 // Objet réactif contenant les données du formulaire
 // reactive() est utilisé pour un objet avec plusieurs propriétés
@@ -74,19 +69,15 @@ function handleSubmit() {
 }
 </script>
 
-<template>
-<<<<<<< HEAD
-    <!-- v-if : affiche le message d'erreur SEULEMENT s'il y a du contenu dans 'error' -->
-    <p v-if="error" class="error">
-        <!-- {{ error }} : affiche la valeur de la variable error (interpolation) -->
-        {{ error }}
-=======
+<template>    
+
+    <!-- v-if : affiche le message d'erreur SEULEMENT s'il y a du contenu dans 'errorName' -->
     <p v-if="errorName" class="error">
+        <!-- {{ errorName }} : affiche la valeur de la variable error (interpolation) -->
         {{ errorName }}
     </p>
     <p v-if="errorAge" class="error">
         {{ errorAge }}
->>>>>>> 012e31e54142cc215f006e77ca28626f431ba33e
     </p>
 
     <!-- @submit.prevent : écoute l'événement 'submit' et appelle handleSubmit() -->

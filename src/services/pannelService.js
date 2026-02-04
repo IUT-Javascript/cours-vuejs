@@ -1,3 +1,8 @@
+/**
+ * Récupère la liste des panneaux à afficher
+ * @returns {Array} - Tableau d'objets panneaux
+ * Note: Pour l'instant, données statiques (stub). Peut être remplacé par un appel API.
+ */
 export function getPannelItems() {
     return [
         {

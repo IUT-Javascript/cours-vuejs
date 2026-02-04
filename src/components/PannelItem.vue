@@ -11,7 +11,11 @@ defineProps({
 </script>
 
 <template>
+<<<<<<< HEAD
     <!-- :class="{ active: isActive }" : Active la classe CSS 'active' si isActive est true (binding de classe dynamique) -->
+=======
+    <!-- if(isActive) then class="active" -->
+>>>>>>> 012e31e54142cc215f006e77ca28626f431ba33e
     <div class="pannel-item w-100" :class="{ active: isActive }">
         <!-- Affiche le titre du panneau (interpolation: {{ variable }}) -->
         <h2>{{ title }}</h2>

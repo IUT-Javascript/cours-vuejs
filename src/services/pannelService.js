@@ -1,5 +1,11 @@
 // Lorsqu'une méthode retourne une liste définie d'éléments on l'appel un service "stub" (factice)
 // Ne pas confondre avec un service "mock" qui est utilisé pour les tests unitaires et qui va simuler des comportements plus complexes
+
+/**
+ * Récupère la liste des panneaux à afficher
+ * @returns {Array} - Tableau d'objets panneaux
+ * Note: Pour l'instant, données statiques (stub). Peut être remplacé par un appel API.
+ */
 export function getPannelItems() {
     return [
         {
